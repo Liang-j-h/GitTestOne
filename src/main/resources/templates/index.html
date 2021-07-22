@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #first{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div id="first">
         <p>this. is a git test</p>
     </div>
     <script>
         window.onload = function () {
             console.log("git test");
+            document.getElementById("first").onmousemove = function (){
+                alert("经过我了");
+            };
+
+
         }
     </script>
 </body>
